@@ -1,9 +1,0 @@
-export const card = {
-  id: 1,
-  name: "Black Brant II",
-  state: "submitted",
-  location: "EARS",
-  motor: "K555",
-  closeDate: "2020-01-07",
-  closeDateFull: "January 7, 2020",
-};
