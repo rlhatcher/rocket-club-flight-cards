@@ -144,7 +144,7 @@ export default function Layout({ children, home }) {
               <div className="flex items-center flex-shrink-0 px-4">
                 <img
                   className="h-20 w-auto"
-                  src="/images/logo-banner.png"
+                  src="/images/banner-image.png"
                   alt="Workflow"
                 />
               </div>
