@@ -1,3 +1,5 @@
+import Head from "next/head";
+import Date from "../../components/date";
 import Layout from "../../components/layout";
 import { getAllCardIds, getCardData } from "../../lib/cards";
 
@@ -7,6 +9,7 @@ export async function getStaticProps({ params }) {
     props: {
       cardData,
     },
+    revalidate: 10,
   };
 }
 
@@ -21,6 +24,9 @@ export async function getStaticPaths() {
 export default function Card({ cardData }) {
   return (
     <Layout>
+      <Head>
+        <title>{cardData.name}</title>
+      </Head>
       <div className="bg-white overflow-hidden shadow rounded-lg divide-y divide-gray-200">
         <div className="px-4 py-5 sm:px-6">
           {cardData.name}
@@ -33,7 +39,8 @@ export default function Card({ cardData }) {
           {cardData.motor}
           <br />
           {cardData.state}
-          {/* Content goes here */}
+          <br />
+          <Date dateString={cardData.closeDate} />
         </div>
       </div>
     </Layout>

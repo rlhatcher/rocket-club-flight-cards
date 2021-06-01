@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Date from "../components/date";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import { getFlightCardData } from "../lib/cards"
+import { getFlightCardData } from "../lib/cards";
 import {
   CalendarIcon,
   FireIcon,
@@ -44,7 +45,8 @@ export default function Home({ cardData }) {
               <ul className="divide-y divide-gray-200">
                 {cardData.map((card) => (
                   <li key={card.id}>
-                    <a href="#" className="block hover:bg-gray-50">
+                    <Link href={`/cards/${card.id}`}>
+                      <div className="block hover:bg-gray-50">
                       <div className="px-4 py-4 sm:px-6">
                         <div className="flex items-center justify-between">
                           <p className="text-sm font-medium text-blue-600 truncate">
@@ -87,7 +89,8 @@ export default function Home({ cardData }) {
                           </div>
                         </div>
                       </div>
-                    </a>
+                      </div>
+                    </Link>
                   </li>
                 ))}
               </ul>

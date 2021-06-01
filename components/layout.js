@@ -11,8 +11,9 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/react/outline'
+import Link from 'next/link'
 
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Rocket Club Online'
 
 const navigation = [
   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -141,6 +142,7 @@ export default function Layout({ children, home }) {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+              <Link href="/">
               <div className="flex items-center flex-shrink-0 px-4">
                 <img
                   className="h-20 w-auto"
@@ -148,6 +150,7 @@ export default function Layout({ children, home }) {
                   alt="Workflow"
                 />
               </div>
+              </Link>
               <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
                 {navigation.map((item) => (
                   <a
