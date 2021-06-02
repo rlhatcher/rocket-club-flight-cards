@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Black Brant II",
+    "state": "submitted",
+    "location": "EARS",
+    "motor": "K555",
+    "closeDate": "2020-01-07",
+    "closeDateFull": "January 7, 2020"
+  },
+  {
+    "id": 2,
+    "name": "50 Cal.",
+    "state": "flown",
+    "location": "EARS",
+    "motor": "E30-7",
+    "closeDate": "2020-01-07",
+    "closeDateFull": "January 7, 2020"
+  },
+  {
+    "id": 3,
+    "name": "The Stinger",
+    "state": "flown",
+    "location": "MRC",
+    "motor": "G126",
+    "closeDate": "2020-01-14",
+    "closeDateFull": "January 14, 2020"
+  }
+]
