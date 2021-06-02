@@ -40,7 +40,7 @@ export default function Card({ cardData }) {
           <br />
           {cardData.state}
           <br />
-          <Date dateString={cardData.closeDate} />
+          {cardData.closeDate}
         </div>
       </div>
     </Layout>
