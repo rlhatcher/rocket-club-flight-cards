@@ -14,15 +14,15 @@
     "@tailwindcss/forms": "^0.3.2",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
-    "next": "^10.0.0",
+    "next": "^10.2.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.15",
-    "tailwindcss": "^2.1.2"
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
   }
 }
