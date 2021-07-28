@@ -19,7 +19,7 @@ const navigation = [
   { name: "Flight Cards", href: "/cards", icon: NewspaperIcon, current: false },
   { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
   { name: "Documents", href: "#", icon: InboxIcon, current: false },
-  { name: "Reports", href: "#", icon: ChartBarIcon, current: false },
+  { name: "Login", href: "/api/auth/login", icon: ChartBarIcon, current: false },
 ];
 
 function classNames(...classes) {

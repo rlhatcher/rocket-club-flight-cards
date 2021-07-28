@@ -8,6 +8,7 @@ import {
   FireIcon,
   LocationMarkerIcon,
 } from "@heroicons/react/solid";
+import { withApollo } from "../lib/withApollo";
 
 export async function getStaticProps() {
   const cardData = getFlightCardData();
