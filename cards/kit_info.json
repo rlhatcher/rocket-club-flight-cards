@@ -1,5 +1,7 @@
 {
+  "id": 427,
   "name": "Star Trooper",
+  "model": "3031",
   "mfg": {
     "id": "Estes",
     "name": "Estes Industries"

@@ -76,8 +76,8 @@ const filterResults = filter => {
   );
 };
 
-const TodoPrivateListQuery = () => {
-  const { loading, error, data } = useQuery(GET_MY_TODOS);
+const KitPrivateListQuery = () => {
+  const { loading, error, data } = useQuery(GET_KITS);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -86,11 +86,11 @@ const TodoPrivateListQuery = () => {
     console.error(error);
     return <div>Error!</div>;
   }
-  return <TodoPrivateList todos={data.todos} />;
+  return <KitPrivateList kits={data.kits} />;
 };
 
-export default TodoPrivateListQuery;
-export { GET_MY_TODOS };
+export default KitPrivateListQuery;
+export { GET_KITS };
 
 
 export function getAllKitData() {
