@@ -1,5 +1,10 @@
 {
-  "name":
+  "name": "Star Trooper",
+  "mfg": {
+    "id": "Estes",
+    "name": "Estes Industries"
+  },
+  "image": "https://estesrockets.com/wp-content/uploads/2013/11/003031_main_1_2.png",
   "recommended_engines": "1/4A3-3T, 1/2A3-2T, 1/2A3-4T, A3-4T, A10-3T",
   "projected_max_altitude": "900 ft. (274 m)",
   "recovery_system": "6 in. (15.2 cm) Streamer",
