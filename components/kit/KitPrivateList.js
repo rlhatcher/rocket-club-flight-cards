@@ -2,21 +2,37 @@ import React, { Fragment, useState } from "react";
 import { useQuery, useMutation } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 
-import TodoItem from "./TodoItem";
-import TodoFilters from "./TodoFilters";
+import KitItem from "./KitItem";
+import KitFilters from "./KitFilters";
 
 const GET_KITS = gql`
-query GetKits {
+query getAllKits {
   kit(order_by: {name: asc}) {
+    id
+    name
+    model
     mfg {
       id
       name
     }
-    id
-    model
-    name
+    image
+    recommended_engines
+    projected_max_altitude
+    recovery_system
+    length
+    diameter
+    estimated_weight
+    estimated_assembly_time
+    fin_materials
+    decal_type
+    launch_system
+    launch_rod_size
+    age_recommendation
+    description
+    instructions
+    is_discontinued
   }
- }`;
+}`;
 
 
 const KitPrivateList = props => {

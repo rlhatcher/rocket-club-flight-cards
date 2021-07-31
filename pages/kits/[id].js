@@ -33,13 +33,13 @@ export default function Kit({ kitData }) {
       <div className="flex items-center">
         <div>
         <img
-          className="inline-block h-14 w-14 rounded-md"
+          className="inline-block h-20 w-20 rounded-md"
           src={kitData.image}
           alt={kitData.name}
         />
         </div>
         <div>
-        <h3 className="text-lg leading-6 font-medium text-gray-900">{kitData.name}</h3>
+        <h3 className="text-lg leading-6 font-bold text-gray-900">{kitData.name}</h3>
         <p className="mt-1 max-w-2xl text-sm text-gray-500">{kitData.mfg.name}</p>
         </div>
       </div>
