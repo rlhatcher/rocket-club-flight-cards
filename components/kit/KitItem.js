@@ -12,7 +12,7 @@ const KitItem = ({ index, kit }) => {
     }
   `;
 
-  const [removeKitoMutation] = useMutation(REMOVE_KIT);
+  const [removeKitMutation] = useMutation(REMOVE_KIT);
 
   const removeKit = e => {
     e.preventDefault();
