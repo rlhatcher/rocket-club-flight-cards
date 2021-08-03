@@ -4,11 +4,9 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../../components/layout";
 import { getKitData } from "../../lib/kits";
 import {
-  CalendarIcon,
-  FireIcon,
-  LocationMarkerIcon,
+  OfficeBuildingIcon,
+  BadgeCheckIcon,
 } from "@heroicons/react/solid";
-import { BadgeCheckIcon } from "@heroicons/react/outline";
 
 export async function getStaticProps() {
   const kitData = getKitData();
