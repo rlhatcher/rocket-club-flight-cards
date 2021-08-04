@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export"
@@ -20,6 +20,7 @@
     "apollo-link-context": "^1.0.20",
     "apollo-link-ws": "^1.0.20",
     "date-fns": "^2.23.0",
+    "deepmerge": "^4.2.2",
     "dotenv": "^10.0.0",
     "graphql": "^15.5.1",
     "gray-matter": "^4.0.3",
