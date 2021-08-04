@@ -1,8 +1,5 @@
 import Layout, { siteTitle } from "../components/layout";
-import { initializeApollo, addApolloState } from "../lib/apolloClient";
-import KitList, {
-  ALL_KITS_QUERY,
-} from "../components/KitList";
+;
 
 const Home = () => {
   return (
@@ -13,17 +10,6 @@ const Home = () => {
   );
 };
 
-export async function getStaticProps() {
-  const apolloClient = initializeApollo();
 
-  await apolloClient.query({
-    query: ALL_KITS_QUERY,
-  });
-
-  return addApolloState(apolloClient, {
-    props: {},
-    revalidate: 1,
-  });
-}
 
 export default Home;

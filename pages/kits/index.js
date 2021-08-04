@@ -1,5 +1,9 @@
 import Layout, { siteTitle } from "../../components/layout";
-import KitList from "../../components/KitList";
+import { initializeApollo, addApolloState } from "../../lib/apolloClient";
+import KitList, {
+  ALL_KITS_QUERY,
+} from "../../components/KitList"
+
 
 export default function Kits({ kitData }) {
   return (
@@ -30,4 +34,17 @@ export default function Kits({ kitData }) {
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo();
+
+  await apolloClient.query({
+    query: ALL_KITS_QUERY,
+  });
+
+  return addApolloState(apolloClient, {
+    props: {},
+    revalidate: 1,
+  });
 }
