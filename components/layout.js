@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/outline'
 import Link from 'next/link'
 import SideMenu from './SideMenu'
+import { useUser } from '@auth0/nextjs-auth0';
 
 export const siteTitle = 'Rocket Club Online'
 
@@ -23,7 +24,7 @@ const navigation = [
   { name: 'Flight Cards', href: '/cards', icon: NewspaperIcon, current: false },
   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
   { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
+  { name: 'Login', href: '/api/auth/login', icon: ChartBarIcon, current: false },
 ]
 
 function classNames(...classes) {
@@ -32,10 +33,12 @@ function classNames(...classes) {
 
 export default function Layout({ children, home }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const { user, error, isLoading } = useUser();
 
   return (
     <div className="h-screen flex overflow-hidden bg-white">
       <Transition.Root show={sidebarOpen} as={Fragment}>
+
         <Dialog
           as="div"
           static
@@ -128,6 +131,7 @@ export default function Layout({ children, home }) {
                     <div className="ml-3">
                       <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">Tom Cook</p>
                       <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">View profile</p>
+                      <a href="/api/auth/login">Login</a>
                     </div>
                   </div>
                 </a>
