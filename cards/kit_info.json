@@ -1,0 +1,24 @@
+{
+  "id": 427,
+  "name": "Star Trooper",
+  "model": "3031",
+  "mfg": {
+    "id": "Estes",
+    "name": "Estes Industries"
+  },
+  "image": "https://estesrockets.com/wp-content/uploads/2013/11/003031_main_1_2.png",
+  "recommended_engines": "1/4A3-3T, 1/2A3-2T, 1/2A3-4T, A3-4T, A10-3T",
+  "projected_max_altitude": "900 ft. (274 m)",
+  "recovery_system": "6 in. (15.2 cm) Streamer",
+  "length": "7 in. (17.8 cm)",
+  "diameter": ".54 in. (14 mm)",
+  "estimated_weight": ".3 oz. (8.5 g)",
+  "estimated_assembly_time": "1 Hour (painting and glue drying time not included)",
+  "fin_materials": "Laser cut wood",
+  "decal_type": "Waterslide",
+  "launch_system": "Porta-Pad II and Electron Beam Launch Controller",
+  "launch_rod_size": "1/8",
+  "age_recommendation": "Estes model rocketry is recommended for boys and girls ages 10+ with adult supervision for those under 12, and rocketeers of all ages.",
+  "description": "Cruise the galaxy in style with the Star Trooper. This small rocket is able to fly up to 900 feet. It is a great rocket for beginners or any rocketeer looking to spice up their collection.",
+  "instructions": "https://estesrockets.com/wp-content/uploads/Instructions/003031_Star_Trooper.pdf"
+}
