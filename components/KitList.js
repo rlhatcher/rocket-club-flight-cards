@@ -46,19 +46,20 @@ export default function KitList() {
   if (loading) return <div>Loading</div>;
 
   const allKits = data.kit;
+  
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
       <ul className="divide-y divide-gray-200">
         {allKits.map((kit, index) => (
           <li key={kit.id}>
-            <Link href={`/cards/${kit.id}`}>
+            <Link href={`/kits/${kit.id}`}>
               <a className="block hover:bg-gray-50">
                 <div className="flex items-center px-4 py-4 sm:px-6">
                   <div className="min-w-0 flex-1 flex items-center">
                     <div className="flex-shrink-0">
                       <img
                         className="h-12 w-12 rounded-full"
-                        src={kit.image ? `${kit.image}` : 'https://estesrockets.com/wp-content/uploads/2013/11/003031_main_1_2.png'}
+                        src={kit.image ? `${kit.image}` : '/images/logo-icon.png'}
                         alt=""
                       />
                     </div>

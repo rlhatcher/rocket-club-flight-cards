@@ -4,7 +4,6 @@ import KitList, {
   ALL_KITS_QUERY,
 } from "../../components/KitList"
 
-
 export default function Kits({ kitData }) {
   return (
     <Layout>
